@@ -21,9 +21,9 @@ import {
 const Sidebar = () => {
   const menuItems = [
     { icon: <LayoutDashboard size={20} />, text: "Dashboard", path: "/Ilness_InjuryDashboard", count: null },
-    { icon: <TrendingUp size={20} />, text: "page 01", path: "/IllnessTrendsPage", count: 3 },
+    { icon: <TrendingUp size={20} />, text: "page 01", path: "/IllnessTrendsPage", count: null },
     { icon: <Activity size={20} />, text: "page 02", path: "/illness-forecast", count: null },
-    { icon: <Zap size={20} />, text: "page 03", path: "/illness-alerts", count: "New" },
+    { icon: <Zap size={20} />, text: "page 03", path: "/illness-alerts", count: null },
     { icon: <ClipboardList size={20} />, text: "page 04", path: "/train-model", count: null },
     
   ];
