@@ -18,6 +18,11 @@ import Optimization from "../components/Bed_demand_focasting/Optimization";
 import DailyInput from "../components/Bed_demand_focasting/DailyInput";
 import Trends from "../components/Bed_demand_focasting/Trends";
 import Inventory from "../components/Bed_demand_focasting/Inventory";
+import Ilness_InjuryDashboard from "../components/Ilness_Injury_forcasting/Ilness_InjuryDashboard";
+import IllnessTrendsPage from "../components/Ilness_Injury_forcasting/IllnessTrendsPage";
+import IllnessForecast from "../components/Ilness_Injury_forcasting/IllnessForecast";
+import IllnessAlerts from "../components/Ilness_Injury_forcasting/IllnessAlerts";
+import TrainModel from "../components/Ilness_Injury_forcasting/TrainModel";
 
 import DashboardLayout from "../dashboard/DashboardLayout";
 import Dashboard from "../dashboard/Dashboard";
@@ -45,6 +50,11 @@ const router = createBrowserRouter([
       { path: "/DailyInput", element: <DailyInput /> },
       { path: "/Trends", element: <Trends /> },
       { path: "/Inventory", element: <Inventory /> },
+      { path: "/Ilness_InjuryDashboard", element: <Ilness_InjuryDashboard /> },
+      { path: "/IllnessTrendsPage", element: <IllnessTrendsPage /> },
+      { path: "/illness-forecast", element: <IllnessForecast /> },
+      { path: "/illness-alerts", element: <IllnessAlerts /> },
+      { path: "/train-model", element: <TrainModel /> },
     ],
   },
   {
