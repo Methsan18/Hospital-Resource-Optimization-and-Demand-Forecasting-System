@@ -20,12 +20,12 @@ import {
 
 const Sidebar = () => {
   const menuItems = [
-    { icon: <LayoutDashboard size={20} />, text: "Dashboard", path: "/bed-dashboard", count: null },
-    { icon: <TrendingUp size={20} />, text: "Forecasts", path: "/Forecast", count: 3 },
-    { icon: <Activity size={20} />, text: "Trends", path: "/Trends", count: null },
-    { icon: <Zap size={20} />, text: "Optimization", path: "/Optimization", count: "New" },
-    { icon: <ClipboardList size={20} />, text: "Daily Input", path: "/DailyInput", count: null },
-    { icon: <Bed size={20} />, text: "Bed Inventory", path: "/Inventory", count: 12 },
+    { icon: <LayoutDashboard size={20} />, text: "Dashboard", path: "/Ilness_InjuryDashboard", count: null },
+    { icon: <TrendingUp size={20} />, text: "page 01", path: "/IllnessTrendsPage", count: 3 },
+    { icon: <Activity size={20} />, text: "page 02", path: "/illness-forecast", count: null },
+    { icon: <Zap size={20} />, text: "page 03", path: "/illness-alerts", count: "New" },
+    { icon: <ClipboardList size={20} />, text: "page 04", path: "/train-model", count: null },
+    
   ];
 
   const [isMobile, setIsMobile] = useState(false);
