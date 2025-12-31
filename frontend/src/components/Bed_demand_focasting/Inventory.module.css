@@ -1,0 +1,49 @@
+:root{
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #d97706;
+  --radius:12px;
+}
+
+.container{padding:18px}
+
+.header{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.headerTop{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.title{font-size:20px;font-weight:700;color:#0f172a}
+.subtitle{color:var(--muted);font-size:13px}
+
+.addBtn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:10px;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;box-shadow:0 6px 18px rgba(37,99,235,0.12)}
+
+.controls{background:var(--card);padding:12px;border-radius:12px;border:1px solid #eef2f6;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.searchWrap{position:relative;flex:1;min-width:180px}
+.searchIcon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#94a3b8}
+.searchInput{width:100%;padding:10px 12px 10px 38px;border-radius:10px;border:1px solid #e6edf3}
+.select{padding:10px 12px;border-radius:10px;border:1px solid #e6edf3;background:var(--card)}
+
+.tableCard{background:var(--card);border-radius:12px;border:1px solid #eef2f6;overflow:hidden;margin-top:10px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{background:#f8fafc;padding:12px;text-align:left;color:var(--muted);font-weight:600}
+tbody td{padding:12px;border-bottom:1px solid #f1f5f9}
+tbody tr:hover{background:#fbfdff}
+
+.badge{padding:6px 10px;border-radius:999px;font-size:12px;font-weight:600;display:inline-block}
+.badgeAvailable{background:#ecfdf5;color:var(--success)}
+.badgeOccupied{background:#fee2e6;color:var(--danger)}
+.badgeMaintenance{background:#fff7ed;color:var(--warning)}
+.badgeDefault{background:#f3f4f6;color:#374151}
+
+.actionsCell{text-align:right}
+.iconBtn{background:transparent;border:none;padding:8px;border-radius:50%;cursor:pointer;color:#64748b}
+.iconBtn:hover{background:#f8fafc;color:var(--accent)}
+
+.pagination{padding:12px;border-top:1px solid #f1f5f9;display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+.pageBtn{padding:8px 10px;border:1px solid #e6edf3;border-radius:8px;background:#fff;cursor:pointer}
+
+@media(max-width:720px){
+  .headerTop{flex-direction:column;align-items:flex-start}
+  .controls{flex-direction:column;align-items:stretch}
+  .actionsCell{text-align:left}
+}

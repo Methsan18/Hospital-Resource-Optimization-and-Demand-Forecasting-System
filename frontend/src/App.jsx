@@ -1,10 +1,18 @@
-import React from 'react'
 
-export default function App() {
+import './App.css'
+import { Outlet } from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+
+
+function App() {
   return (
-    <div style={{fontFamily: 'system-ui, Arial, sans-serif', padding: 24}}>
-      <h1>Hospital Resource Optimization — Frontend</h1>
-      <p>Vite + React minimal scaffold. Run the instructions in README.md.</p>
+    <div className='min-h-screen'>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   )
 }
+
+export default App
